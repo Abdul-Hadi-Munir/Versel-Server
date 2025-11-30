@@ -1,12 +1,3 @@
-import cors from "cors";
-
-app.use(cors({
-  origin: "https://versel-client-black.vercel.app",
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
-}));
-
-
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
@@ -39,4 +30,5 @@ app.get('/', (req, res) => {
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
 
